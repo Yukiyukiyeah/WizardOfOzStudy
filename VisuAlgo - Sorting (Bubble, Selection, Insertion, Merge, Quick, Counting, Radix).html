@@ -4,7 +4,7 @@
 
 <meta name="description" content="Sorting is a very classic problem of reordering items (that can be compared, e.g. integers, floating-point numbers, strings, etc) of an array (or a list) in a certain order (increasing, non-decreasing, decreasing, non-increasing, lexicographical, etc).There are many different sorting algorithms, each has its own advantages and limitations.Sorting is commonly used as the introductory problem in various Computer Science classes to showcase a range of algorithmic ideas.Without loss of generality, we assume that we will sort only Integers, not necessarily distinct, in non-decreasing order in this visualization. Try clicking Bubble Sort for a sample animation of sorting the list of 5 jumbled integers (with duplicate) above.Click &#39;Next&#39; (on the top right)/press &#39;Page Down&#39; to advance this e-Lecture slide, use the drop down list/press &#39;Space&#39; to jump to a specific slide, or Click &#39;X&#39; (on the bottom right)/press &#39;Esc&#39; to go to Exploration mode.">
 <meta name="keywords" content="Sorting Bubble Select Selection Insert Insertion Merge Random Quick Counting Radix">
-
+ 
 <meta name="csrf-token" content="Ms0ZUchJHHKO7Z4xXzB1esLWOWGM0b5PUS2skOF0">
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
 <meta property="og:image" content="https://visualgo.net/img/png/sorting.png">
@@ -20,136 +20,6 @@
 <link rel="stylesheet" href="./VisuAlgo - Sorting (Bubble, Selection, Insertion, Merge, Quick, Counting, Radix)_files/visual.css">
 <link rel="stylesheet" href="./VisuAlgo - Sorting (Bubble, Selection, Insertion, Merge, Quick, Counting, Radix)_files/drawgraph.css">
 <style>
-/* Button used to open the chat form - fixed at the bottom of the page */
-.open-button {
-  background-color: #555;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 10%;
-  right: 48%;
-  width: 10%;
-}
-/* The popup chat - hidden by default */
-.chat-popup {
-  display:none;
-  position: fixed;
-  bottom: 7%;
-  right: 5%;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
-}
-/*xalgo*/
-.chatbox {
-  font-family:tahoma;
-  font-size:12px;
-  padding:0px;
-  margin:1px;
-  line-height:18px;
-  width:400px;
-  height:50px;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-#content {
-  padding:5px;
-  background:#ddd;
-  border-radius:5px;
-    overflow-y: scroll;
-    border:1px solid #CCC;
-    margin-top:10px;
-    height: 160px;
-  }
-#input {
-  border-radius:2px;
-  border:1px solid #ccc;
-    margin-top:10px;
-     padding:5px;
-     width:200px;
-}
-#status1 { width:88px;
-  display:block;
-  float:left;
-  margin-top:15px;
-}
-
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-
-/* Button used to open the chat form - fixed at the bottom of the page */
-.open-button {
-  background-color: #555;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 10%;
-  right: 48%;
-  width: 10%;
-}
-
-/* The popup chat - hidden by default */
-.chat-popup {
-  display: none;
-  position: fixed;
-  bottom: 7%;
-  right: 43%;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
-}
-
-/* Add styles to the form container */
-.form-container {
-  max-width: 300px;
-  height: 280px;
-  padding: 10px;
-  background-color: white;
-}
-
-/* Full-width textarea */
-.form-container textarea {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 5px 0;
-  border: none;
-  background: #f1f1f1;
-  resize: none;
-  min-height: 100px;
-}
-
-/* When the textarea gets focus, do something */
-.form-container textarea:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for the submit/send button */
-.form-container .btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
-}
-
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: red;
-}
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
-}
       #e-lecture {
         top: 45px;
         right: 130px;
@@ -201,7 +71,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 text {
   fill: black;
   font: 20px sans-serif;
-  text-anchor: middle;
+  text-anchor: middle; 
 }
 
 #viz-radix-sort-canvas {
@@ -947,34 +817,7 @@ This project is made possible by the generous <a href="http://www.cdtl.nus.edu.s
 <p>VisuAlgo is free of charge for Computer Science community on earth. If you like VisuAlgo, the only payment that we ask of you is for you to <b>tell the existence of VisuAlgo to other Computer Science students/instructors</b> that you know =) via Facebook, Twitter, course webpage, blog review, email, etc.</p> <p>If you are a data structure and algorithm <b>student/instructor</b>, you are allowed to use this website directly for your classes. If you take screen shots (videos) from this website, you can use the screen shots (videos) elsewhere as long as you cite the URL of this website (http://visualgo.net) and/or list of publications below as reference. However, you are <b>NOT</b> allowed to download VisuAlgo (client-side) files and <b>host it</b> on your own website as it is <b>plagiarism</b>. As of now, we do <b>NOT</b> allow other people to fork this project and create variants of VisuAlgo. Using the offline copy of (client-side) VisuAlgo for your personal usage is fine.</p> <p>Note that VisuAlgo's online quiz component is by nature has heavy server-side component and there is no easy way to save the server-side scripts and databases locally. Currently, the general public can only use the 'training mode' to access these online quiz system. Currently the 'test mode' is a more controlled environment for using these randomly generated questions and automatic verification for a <b>real</b> examination in NUS. Other interested CS instructor should contact Steven if you want to try such 'test mode'.</p> <p><strong><span style="line-height: 200%;">List of Publications</span></strong></p> <p>This work has been presented briefly at the CLI Workshop at the ACM ICPC World Finals 2012 (Poland, Warsaw) and at the IOI Conference at IOI 2012 (Sirmione-Montichiari, Italy). You can click <a href="http://www.ioinformatics.org/oi/shtm/INFOL099.shtml" target="_blank">this link</a> to read our 2012 paper about this system (it was not yet called VisuAlgo back in 2012).</p><p>This work is done mostly by my past students. The most recent final reports are here: <a href="https://visualgo.net/en/fyp/erin-report.pdf" target="_blank">Erin</a>, <a href="https://visualgo.net/en/fyp/wangzi-report.pdf" target="_blank">Wang Zi</a>, <a href="https://visualgo.net/en/fyp/rose-report.pdf" target="_blank">Rose</a>, <a href="https://visualgo.net/en/fyp/ivan-report.pdf" target="_blank">Ivan</a>.</p> <p><strong><span style="line-height: 200%;">Bug Reports or Request for New Features</span></strong></p> <p>VisuAlgo is not a finished project. Dr Steven Halim is still actively improving VisuAlgo. If you are using VisuAlgo and spot a bug in any of our visualization page/online quiz tool or if you want to request for new features, please contact Dr Steven Halim. His contact is the concatenation of his name and add gmail dot com.</p>
 </div>
 </div>
-<!-- xalgo -->
-<button class="open-button" id = "myButton" onclick="openForm()">Chat</button>
-<div class="chat-popup" id="myForm">
-  <div id = "menu">
-    <button type = "button" class = "logout" onclick = "closeForm()">Close</button>
-  </div>
-<div class = "chatbox" id="content"></div>
-<div class = "chatbox">
-  <span id="status1">Connecting...</span>
-  <input type="text" id="input" disabled="disabled" />
-</div>
-</div>
 
-
-<script src="./VisuAlgo - 排序（冒泡排序, 选择排序, 插入排序, 归并排序, 快速排序, 计数排序, 基数排序）_files/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="./chat-frontend.js"></script>
-<script>
-function openForm() {
-document.getElementById("myForm").style.display = "block";
-document.getElementById("myButton").style.display = "none";
-}
-
-function closeForm() {
-document.getElementById("myForm").style.display = "none";
-document.getElementById("myButton").style.display = "";
-}
-</script>
 <script src="./VisuAlgo - Sorting (Bubble, Selection, Insertion, Merge, Quick, Counting, Radix)_files/jquery-3.3.1.min.js"></script>
 <script>
       var PHP_DOMAIN = "";
@@ -1120,7 +963,7 @@ document.getElementById("myButton").style.display = "";
           var element;
           if (isLoggedIn) {
             // element = '<a onclick="verifyLogout()">Logout</a>';
-            element = '<a href="https://visualgo.net/profile">Profile</a>';
+            element = '<a href="https://visualgo.net/profile">Profile</a>'; 
           }
           else {
             element = '<a href="https://visualgo.net/login">Login</a>'
@@ -1169,31 +1012,31 @@ changeSortType(gw.bubbleSort, "29,10,14,37,14");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '1-1') {
           $("#e-lecture").html("slide " + slide + " (" + 2 + "%)");
-
+          
           hideEntireActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '1-2') {
           $("#e-lecture").html("slide " + slide + " (" + 4 + "%)");
-
+          
           hideEntireActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '2') {
           $("#e-lecture").html("slide " + slide + " (" + 5 + "%)");
-
+          
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '2-1') {
           $("#e-lecture").html("slide " + slide + " (" + 7 + "%)");
@@ -1201,7 +1044,7 @@ changeSortType(gw.bubbleSort, "29,10,14,37,14");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '2-2') {
           $("#e-lecture").html("slide " + slide + " (" + 8 + "%)");
@@ -1210,39 +1053,39 @@ $("#sort").click().addClass("menu-highlighted");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '3') {
           $("#e-lecture").html("slide " + slide + " (" + 9 + "%)");
-
+          
           hideEntireActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '4') {
           $("#e-lecture").html("slide " + slide + " (" + 11 + "%)");
-
+          
           hideEntireActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '4-1') {
           $("#e-lecture").html("slide " + slide + " (" + 12 + "%)");
-
+          
           hideEntireActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '5') {
           $("#e-lecture").html("slide " + slide + " (" + 14 + "%)");
-
+          
           hideEntireActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '6') {
           $("#e-lecture").html("slide " + slide + " (" + 15 + "%)");
@@ -1252,7 +1095,7 @@ changeSortType(gw.bubbleSort, "29,10,14,37,14");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '6-1') {
           $("#e-lecture").html("slide " + slide + " (" + 16 + "%)");
@@ -1262,7 +1105,7 @@ changeSortType(gw.bubbleSort, "29,10,14,37,14");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '6-2') {
           $("#e-lecture").html("slide " + slide + " (" + 18 + "%)");
@@ -1272,7 +1115,7 @@ changeSortType(gw.bubbleSort, "3,6,11,25,39");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '6-3') {
           $("#e-lecture").html("slide " + slide + " (" + 19 + "%)");
@@ -1281,7 +1124,7 @@ $("#sort").click().addClass("menu-highlighted");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '7') {
           $("#e-lecture").html("slide " + slide + " (" + 21 + "%)");
@@ -1291,7 +1134,7 @@ changeSortType(gw.selectionSort, "29,10,14,37,13");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '7-1') {
           $("#e-lecture").html("slide " + slide + " (" + 22 + "%)");
@@ -1301,7 +1144,7 @@ changeSortType(gw.selectionSort, "29,10,14,37,13");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '7-2') {
           $("#e-lecture").html("slide " + slide + " (" + 23 + "%)");
@@ -1311,7 +1154,7 @@ changeSortType(gw.selectionSort, "29,10,14,37,13");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '8') {
           $("#e-lecture").html("slide " + slide + " (" + 25 + "%)");
@@ -1321,7 +1164,7 @@ changeSortType(gw.insertionSort, "40,13,20,8");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '8-1') {
           $("#e-lecture").html("slide " + slide + " (" + 26 + "%)");
@@ -1331,7 +1174,7 @@ changeSortType(gw.insertionSort, "40,13,20,8");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '8-2') {
           $("#e-lecture").html("slide " + slide + " (" + 28 + "%)");
@@ -1341,7 +1184,7 @@ changeSortType(gw.insertionSort, "40,13,20,8");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '8-3') {
           $("#e-lecture").html("slide " + slide + " (" + 29 + "%)");
@@ -1351,15 +1194,15 @@ changeSortType(gw.insertionSort, "40,13,20,8");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '9') {
           $("#e-lecture").html("slide " + slide + " (" + 30 + "%)");
-
+          
           hideEntireActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '10') {
           $("#e-lecture").html("slide " + slide + " (" + 32 + "%)");
@@ -1367,7 +1210,7 @@ changeSortType(gw.insertionSort, "40,13,20,8");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '10-1') {
           $("#e-lecture").html("slide " + slide + " (" + 33 + "%)");
@@ -1376,7 +1219,7 @@ changeSortType(gw.mergeSort, "1,5,19,20,2,11,15,17");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '10-2') {
           $("#e-lecture").html("slide " + slide + " (" + 35 + "%)");
@@ -1385,7 +1228,7 @@ changeSortType(gw.mergeSort, "1,5,19,20,2,11,15,17");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '10-3') {
           $("#e-lecture").html("slide " + slide + " (" + 36 + "%)");
@@ -1393,7 +1236,7 @@ changeSortType(gw.mergeSort, "1,5,19,20,2,11,15,17");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '10-4') {
           $("#e-lecture").html("slide " + slide + " (" + 38 + "%)");
@@ -1401,7 +1244,7 @@ changeSortType(gw.mergeSort, "1,5,19,20,2,11,15,17");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '10-5') {
           $("#e-lecture").html("slide " + slide + " (" + 39 + "%)");
@@ -1409,7 +1252,7 @@ changeSortType(gw.mergeSort, "1,5,19,20,2,11,15,17");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '10-6') {
           $("#e-lecture").html("slide " + slide + " (" + 40 + "%)");
@@ -1418,7 +1261,7 @@ changeSortType(gw.mergeSort, "7,2,6,3,8,4,5");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '10-7') {
           $("#e-lecture").html("slide " + slide + " (" + 42 + "%)");
@@ -1426,7 +1269,7 @@ changeSortType(gw.mergeSort, "7,2,6,3,8,4,5");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '10-8') {
           $("#e-lecture").html("slide " + slide + " (" + 43 + "%)");
@@ -1434,7 +1277,7 @@ changeSortType(gw.mergeSort, "7,2,6,3,8,4,5");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '10-9') {
           $("#e-lecture").html("slide " + slide + " (" + 45 + "%)");
@@ -1442,15 +1285,15 @@ changeSortType(gw.mergeSort, "7,2,6,3,8,4,5");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '10-10') {
           $("#e-lecture").html("slide " + slide + " (" + 46 + "%)");
-
+          
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '11') {
           $("#e-lecture").html("slide " + slide + " (" + 47 + "%)");
@@ -1459,7 +1302,7 @@ changeSortType(gw.quickSort, "27,38,12,39,27,16");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '11-1') {
           $("#e-lecture").html("slide " + slide + " (" + 49 + "%)");
@@ -1468,7 +1311,7 @@ changeSortType(gw.quickSort, "27,38,12,39,27,16");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '11-2') {
           $("#e-lecture").html("slide " + slide + " (" + 50 + "%)");
@@ -1477,7 +1320,7 @@ changeSortType(gw.quickSort, "27,38,12,39,27,16");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '11-3') {
           $("#e-lecture").html("slide " + slide + " (" + 52 + "%)");
@@ -1486,7 +1329,7 @@ changeSortType(gw.quickSort, "27,38,12,39,27,16");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '11-4') {
           $("#e-lecture").html("slide " + slide + " (" + 53 + "%)");
@@ -1495,7 +1338,7 @@ changeSortType(gw.quickSort, "27,38,12,39,27,16");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '11-5') {
           $("#e-lecture").html("slide " + slide + " (" + 54 + "%)");
@@ -1504,7 +1347,7 @@ changeSortType(gw.quickSort, "27,38,12,39,27,16");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '11-6') {
           $("#e-lecture").html("slide " + slide + " (" + 56 + "%)");
@@ -1513,7 +1356,7 @@ changeSortType(gw.quickSort, "27,38,12,39,27,16");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '11-7') {
           $("#e-lecture").html("slide " + slide + " (" + 57 + "%)");
@@ -1522,7 +1365,7 @@ changeSortType(gw.quickSort, "27,38,12,39,27,16");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '11-8') {
           $("#e-lecture").html("slide " + slide + " (" + 59 + "%)");
@@ -1531,7 +1374,7 @@ changeSortType(gw.quickSort, "27,38,12,39,27,16");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '11-9') {
           $("#e-lecture").html("slide " + slide + " (" + 60 + "%)");
@@ -1540,7 +1383,7 @@ changeSortType(gw.quickSort, "27,38,12,39,27,16");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '11-10') {
           $("#e-lecture").html("slide " + slide + " (" + 61 + "%)");
@@ -1549,7 +1392,7 @@ changeSortType(gw.quickSort, "27,38,12,39,27,16");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '11-11') {
           $("#e-lecture").html("slide " + slide + " (" + 63 + "%)");
@@ -1558,7 +1401,7 @@ changeSortType(gw.quickSort, "5,18,23,39,44,50");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '11-12') {
           $("#e-lecture").html("slide " + slide + " (" + 64 + "%)");
@@ -1567,7 +1410,7 @@ changeSortType(gw.quickSort, "5,18,23,39,44,50");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '11-13') {
           $("#e-lecture").html("slide " + slide + " (" + 66 + "%)");
@@ -1576,7 +1419,7 @@ changeSortType(gw.quickSort, "4,1,3,2,6,5,7");
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '12') {
           $("#e-lecture").html("slide " + slide + " (" + 67 + "%)");
@@ -1585,15 +1428,15 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           hideEntireActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '12-1') {
           $("#e-lecture").html("slide " + slide + " (" + 69 + "%)");
-
+          
           hideEntireActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '13') {
           $("#e-lecture").html("slide " + slide + " (" + 70 + "%)");
@@ -1602,7 +1445,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '13-1') {
           $("#e-lecture").html("slide " + slide + " (" + 71 + "%)");
@@ -1611,7 +1454,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '14') {
           $("#e-lecture").html("slide " + slide + " (" + 73 + "%)");
@@ -1619,7 +1462,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '15') {
           $("#e-lecture").html("slide " + slide + " (" + 74 + "%)");
@@ -1627,7 +1470,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '15-1') {
           $("#e-lecture").html("slide " + slide + " (" + 76 + "%)");
@@ -1635,144 +1478,144 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           showActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '16') {
           $("#e-lecture").html("slide " + slide + " (" + 77 + "%)");
-
+          
           hideEntireActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '16-1') {
           $("#e-lecture").html("slide " + slide + " (" + 78 + "%)");
-
+          
           hideEntireActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '16-2') {
           $("#e-lecture").html("slide " + slide + " (" + 80 + "%)");
-
+          
           hideEntireActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '16-3') {
           $("#e-lecture").html("slide " + slide + " (" + 81 + "%)");
-
+          
           hideEntireActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '17') {
           $("#e-lecture").html("slide " + slide + " (" + 83 + "%)");
-
+          
           hideEntireActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '17-1') {
           $("#e-lecture").html("slide " + slide + " (" + 84 + "%)");
-
+          
           hideEntireActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '17-2') {
           $("#e-lecture").html("slide " + slide + " (" + 85 + "%)");
-
+          
           hideEntireActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '18') {
           $("#e-lecture").html("slide " + slide + " (" + 87 + "%)");
-
+          
           hideEntireActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '18-1') {
           $("#e-lecture").html("slide " + slide + " (" + 88 + "%)");
-
+          
           hideEntireActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '18-2') {
           $("#e-lecture").html("slide " + slide + " (" + 90 + "%)");
-
+          
           hideEntireActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '18-3') {
           $("#e-lecture").html("slide " + slide + " (" + 91 + "%)");
-
+          
           hideEntireActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '18-4') {
           $("#e-lecture").html("slide " + slide + " (" + 92 + "%)");
-
+          
           hideEntireActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '18-5') {
           $("#e-lecture").html("slide " + slide + " (" + 94 + "%)");
-
+          
           hideEntireActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '99') {
           $("#e-lecture").html("slide " + slide + " (" + 95 + "%)");
-
+          
           hideEntireActionsPanel();
-
+ 
           showStatusPanel();
           showCodetracePanel();
-
+      
         }
         if (slide == '99-1') {
           $("#e-lecture").html("slide " + slide + " (" + 97 + "%)");
-
+          
           hideEntireActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '99-2') {
           $("#e-lecture").html("slide " + slide + " (" + 98 + "%)");
-
+          
           hideEntireActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
         if (slide == '99-3') {
           $("#e-lecture").html("slide " + slide + " (" + 100 + "%)");
-
+          
           hideEntireActionsPanel();
           hideStatusPanel();
           hideCodetracePanel();
-
+      
         }
       }
 
@@ -1808,7 +1651,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
       }
 
       function showOverlay() {
-        $('#overlay').css('opacity', 0.5);
+        $('#overlay').css('opacity', 0.5); 
         $('#overlay').show();
       }
 
@@ -1837,7 +1680,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
 
       $(function() {
         var slide = getUrlParameter('slide');
-
+        
         $.get('/hasvisited' + '/sorting', function(data) {
           var hasVisited = data['hasvisited'] == '1';
           if (!hasVisited) {
@@ -1860,7 +1703,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
             if (typeof slide != undefined && slide != null) {
               cur_slide = slide;
               $('#mode-menu a').click();
-            }
+            }    
           }
         }).fail(function() {
           if (typeof slide != undefined && slide != null) {
@@ -1932,7 +1775,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('1-1');
           pushState('1-1');
         });
-
+      
         $('#electure-1-1 .electure-next').click(function() {
           hidePopup();
           runSlide('1-2');
@@ -1943,7 +1786,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('1');
           pushState('1');
         });
-
+      
         $('#electure-1-2 .electure-next').click(function() {
           hidePopup();
           runSlide('2');
@@ -1954,7 +1797,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('1-1');
           pushState('1-1');
         });
-
+      
         $('#electure-2 .electure-next').click(function() {
           hidePopup();
           runSlide('2-1');
@@ -1965,7 +1808,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('1-2');
           pushState('1-2');
         });
-
+      
         $('#electure-2-1 .electure-next').click(function() {
           hidePopup();
           runSlide('2-2');
@@ -1976,7 +1819,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('2');
           pushState('2');
         });
-
+      
         $('#electure-2-2 .electure-next').click(function() {
           hidePopup();
           runSlide('3');
@@ -1987,7 +1830,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('2-1');
           pushState('2-1');
         });
-
+      
         $('#electure-3 .electure-next').click(function() {
           hidePopup();
           runSlide('4');
@@ -1998,7 +1841,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('2-2');
           pushState('2-2');
         });
-
+      
         $('#electure-4 .electure-next').click(function() {
           hidePopup();
           runSlide('4-1');
@@ -2009,7 +1852,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('3');
           pushState('3');
         });
-
+      
         $('#electure-4-1 .electure-next').click(function() {
           hidePopup();
           runSlide('5');
@@ -2020,7 +1863,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('4');
           pushState('4');
         });
-
+      
         $('#electure-5 .electure-next').click(function() {
           hidePopup();
           runSlide('6');
@@ -2031,7 +1874,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('4-1');
           pushState('4-1');
         });
-
+      
         $('#electure-6 .electure-next').click(function() {
           hidePopup();
           runSlide('6-1');
@@ -2042,7 +1885,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('5');
           pushState('5');
         });
-
+      
         $('#electure-6-1 .electure-next').click(function() {
           hidePopup();
           runSlide('6-2');
@@ -2053,7 +1896,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('6');
           pushState('6');
         });
-
+      
         $('#electure-6-2 .electure-next').click(function() {
           hidePopup();
           runSlide('6-3');
@@ -2064,7 +1907,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('6-1');
           pushState('6-1');
         });
-
+      
         $('#electure-6-3 .electure-next').click(function() {
           hidePopup();
           runSlide('7');
@@ -2075,7 +1918,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('6-2');
           pushState('6-2');
         });
-
+      
         $('#electure-7 .electure-next').click(function() {
           hidePopup();
           runSlide('7-1');
@@ -2086,7 +1929,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('6-3');
           pushState('6-3');
         });
-
+      
         $('#electure-7-1 .electure-next').click(function() {
           hidePopup();
           runSlide('7-2');
@@ -2097,7 +1940,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('7');
           pushState('7');
         });
-
+      
         $('#electure-7-2 .electure-next').click(function() {
           hidePopup();
           runSlide('8');
@@ -2108,7 +1951,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('7-1');
           pushState('7-1');
         });
-
+      
         $('#electure-8 .electure-next').click(function() {
           hidePopup();
           runSlide('8-1');
@@ -2119,7 +1962,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('7-2');
           pushState('7-2');
         });
-
+      
         $('#electure-8-1 .electure-next').click(function() {
           hidePopup();
           runSlide('8-2');
@@ -2130,7 +1973,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('8');
           pushState('8');
         });
-
+      
         $('#electure-8-2 .electure-next').click(function() {
           hidePopup();
           runSlide('8-3');
@@ -2141,7 +1984,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('8-1');
           pushState('8-1');
         });
-
+      
         $('#electure-8-3 .electure-next').click(function() {
           hidePopup();
           runSlide('9');
@@ -2152,7 +1995,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('8-2');
           pushState('8-2');
         });
-
+      
         $('#electure-9 .electure-next').click(function() {
           hidePopup();
           runSlide('10');
@@ -2163,7 +2006,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('8-3');
           pushState('8-3');
         });
-
+      
         $('#electure-10 .electure-next').click(function() {
           hidePopup();
           runSlide('10-1');
@@ -2174,7 +2017,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('9');
           pushState('9');
         });
-
+      
         $('#electure-10-1 .electure-next').click(function() {
           hidePopup();
           runSlide('10-2');
@@ -2185,7 +2028,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('10');
           pushState('10');
         });
-
+      
         $('#electure-10-2 .electure-next').click(function() {
           hidePopup();
           runSlide('10-3');
@@ -2196,7 +2039,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('10-1');
           pushState('10-1');
         });
-
+      
         $('#electure-10-3 .electure-next').click(function() {
           hidePopup();
           runSlide('10-4');
@@ -2207,7 +2050,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('10-2');
           pushState('10-2');
         });
-
+      
         $('#electure-10-4 .electure-next').click(function() {
           hidePopup();
           runSlide('10-5');
@@ -2218,7 +2061,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('10-3');
           pushState('10-3');
         });
-
+      
         $('#electure-10-5 .electure-next').click(function() {
           hidePopup();
           runSlide('10-6');
@@ -2229,7 +2072,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('10-4');
           pushState('10-4');
         });
-
+      
         $('#electure-10-6 .electure-next').click(function() {
           hidePopup();
           runSlide('10-7');
@@ -2240,7 +2083,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('10-5');
           pushState('10-5');
         });
-
+      
         $('#electure-10-7 .electure-next').click(function() {
           hidePopup();
           runSlide('10-8');
@@ -2251,7 +2094,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('10-6');
           pushState('10-6');
         });
-
+      
         $('#electure-10-8 .electure-next').click(function() {
           hidePopup();
           runSlide('10-9');
@@ -2262,7 +2105,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('10-7');
           pushState('10-7');
         });
-
+      
         $('#electure-10-9 .electure-next').click(function() {
           hidePopup();
           runSlide('10-10');
@@ -2273,7 +2116,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('10-8');
           pushState('10-8');
         });
-
+      
         $('#electure-10-10 .electure-next').click(function() {
           hidePopup();
           runSlide('11');
@@ -2284,7 +2127,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('10-9');
           pushState('10-9');
         });
-
+      
         $('#electure-11 .electure-next').click(function() {
           hidePopup();
           runSlide('11-1');
@@ -2295,7 +2138,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('10-10');
           pushState('10-10');
         });
-
+      
         $('#electure-11-1 .electure-next').click(function() {
           hidePopup();
           runSlide('11-2');
@@ -2306,7 +2149,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('11');
           pushState('11');
         });
-
+      
         $('#electure-11-2 .electure-next').click(function() {
           hidePopup();
           runSlide('11-3');
@@ -2317,7 +2160,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('11-1');
           pushState('11-1');
         });
-
+      
         $('#electure-11-3 .electure-next').click(function() {
           hidePopup();
           runSlide('11-4');
@@ -2328,7 +2171,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('11-2');
           pushState('11-2');
         });
-
+      
         $('#electure-11-4 .electure-next').click(function() {
           hidePopup();
           runSlide('11-5');
@@ -2339,7 +2182,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('11-3');
           pushState('11-3');
         });
-
+      
         $('#electure-11-5 .electure-next').click(function() {
           hidePopup();
           runSlide('11-6');
@@ -2350,7 +2193,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('11-4');
           pushState('11-4');
         });
-
+      
         $('#electure-11-6 .electure-next').click(function() {
           hidePopup();
           runSlide('11-7');
@@ -2361,7 +2204,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('11-5');
           pushState('11-5');
         });
-
+      
         $('#electure-11-7 .electure-next').click(function() {
           hidePopup();
           runSlide('11-8');
@@ -2372,7 +2215,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('11-6');
           pushState('11-6');
         });
-
+      
         $('#electure-11-8 .electure-next').click(function() {
           hidePopup();
           runSlide('11-9');
@@ -2383,7 +2226,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('11-7');
           pushState('11-7');
         });
-
+      
         $('#electure-11-9 .electure-next').click(function() {
           hidePopup();
           runSlide('11-10');
@@ -2394,7 +2237,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('11-8');
           pushState('11-8');
         });
-
+      
         $('#electure-11-10 .electure-next').click(function() {
           hidePopup();
           runSlide('11-11');
@@ -2405,7 +2248,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('11-9');
           pushState('11-9');
         });
-
+      
         $('#electure-11-11 .electure-next').click(function() {
           hidePopup();
           runSlide('11-12');
@@ -2416,7 +2259,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('11-10');
           pushState('11-10');
         });
-
+      
         $('#electure-11-12 .electure-next').click(function() {
           hidePopup();
           runSlide('11-13');
@@ -2427,7 +2270,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('11-11');
           pushState('11-11');
         });
-
+      
         $('#electure-11-13 .electure-next').click(function() {
           hidePopup();
           runSlide('12');
@@ -2438,7 +2281,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('11-12');
           pushState('11-12');
         });
-
+      
         $('#electure-12 .electure-next').click(function() {
           hidePopup();
           runSlide('12-1');
@@ -2449,7 +2292,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('11-13');
           pushState('11-13');
         });
-
+      
         $('#electure-12-1 .electure-next').click(function() {
           hidePopup();
           runSlide('13');
@@ -2460,7 +2303,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('12');
           pushState('12');
         });
-
+      
         $('#electure-13 .electure-next').click(function() {
           hidePopup();
           runSlide('13-1');
@@ -2471,7 +2314,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('12-1');
           pushState('12-1');
         });
-
+      
         $('#electure-13-1 .electure-next').click(function() {
           hidePopup();
           runSlide('14');
@@ -2482,7 +2325,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('13');
           pushState('13');
         });
-
+      
         $('#electure-14 .electure-next').click(function() {
           hidePopup();
           runSlide('15');
@@ -2493,7 +2336,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('13-1');
           pushState('13-1');
         });
-
+      
         $('#electure-15 .electure-next').click(function() {
           hidePopup();
           runSlide('15-1');
@@ -2504,7 +2347,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('14');
           pushState('14');
         });
-
+      
         $('#electure-15-1 .electure-next').click(function() {
           hidePopup();
           runSlide('16');
@@ -2515,7 +2358,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('15');
           pushState('15');
         });
-
+      
         $('#electure-16 .electure-next').click(function() {
           hidePopup();
           runSlide('16-1');
@@ -2526,7 +2369,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('15-1');
           pushState('15-1');
         });
-
+      
         $('#electure-16-1 .electure-next').click(function() {
           hidePopup();
           runSlide('16-2');
@@ -2537,7 +2380,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('16');
           pushState('16');
         });
-
+      
         $('#electure-16-2 .electure-next').click(function() {
           hidePopup();
           runSlide('16-3');
@@ -2548,7 +2391,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('16-1');
           pushState('16-1');
         });
-
+      
         $('#electure-16-3 .electure-next').click(function() {
           hidePopup();
           runSlide('17');
@@ -2559,7 +2402,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('16-2');
           pushState('16-2');
         });
-
+      
         $('#electure-17 .electure-next').click(function() {
           hidePopup();
           runSlide('17-1');
@@ -2570,7 +2413,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('16-3');
           pushState('16-3');
         });
-
+      
         $('#electure-17-1 .electure-next').click(function() {
           hidePopup();
           runSlide('17-2');
@@ -2581,7 +2424,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('17');
           pushState('17');
         });
-
+      
         $('#electure-17-2 .electure-next').click(function() {
           hidePopup();
           runSlide('18');
@@ -2592,7 +2435,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('17-1');
           pushState('17-1');
         });
-
+      
         $('#electure-18 .electure-next').click(function() {
           hidePopup();
           runSlide('18-1');
@@ -2603,7 +2446,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('17-2');
           pushState('17-2');
         });
-
+      
         $('#electure-18-1 .electure-next').click(function() {
           hidePopup();
           runSlide('18-2');
@@ -2614,7 +2457,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('18');
           pushState('18');
         });
-
+      
         $('#electure-18-2 .electure-next').click(function() {
           hidePopup();
           runSlide('18-3');
@@ -2625,7 +2468,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('18-1');
           pushState('18-1');
         });
-
+      
         $('#electure-18-3 .electure-next').click(function() {
           hidePopup();
           runSlide('18-4');
@@ -2636,7 +2479,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('18-2');
           pushState('18-2');
         });
-
+      
         $('#electure-18-4 .electure-next').click(function() {
           hidePopup();
           runSlide('18-5');
@@ -2647,7 +2490,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('18-3');
           pushState('18-3');
         });
-
+      
         $('#electure-18-5 .electure-next').click(function() {
           hidePopup();
           runSlide('99');
@@ -2658,7 +2501,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('18-4');
           pushState('18-4');
         });
-
+      
         $('#electure-99 .electure-next').click(function() {
           hidePopup();
           runSlide('99-1');
@@ -2669,7 +2512,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('18-5');
           pushState('18-5');
         });
-
+      
         $('#electure-99-1 .electure-next').click(function() {
           hidePopup();
           runSlide('99-2');
@@ -2680,7 +2523,7 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('99');
           pushState('99');
         });
-
+      
         $('#electure-99-2 .electure-next').click(function() {
           hidePopup();
           runSlide('99-3');
@@ -2691,14 +2534,14 @@ changeSortType(gw.randomizedQuickSort, DEFAULT_DATA);
           runSlide('99-1');
           pushState('99-1');
         });
-
+      
         $('#electure-99-3 .electure-prev').click(function() {
           hidePopup();
           runSlide('99-2');
           pushState('99-2');
         });
-
-
+      
+ 
 
         // temporary quick fix for Google Chrome Aug 2016 issue..., put at last part so that everything else has been loaded
         // setTimeout(function(){ document.body.style.zoom = "100.1%"; }, 500);
@@ -2761,7 +2604,7 @@ SORT();
         if (width == 0 && height == 0) {
           setTimeout(adjustPopupToImageSize, 200);
         } else {
-          showPopup();
+          showPopup();  
         }
       }
 
@@ -3316,7 +3159,7 @@ var Sorting = function() {
       }
     }
 
-    this.loadNumberList(numArray);
+    this.loadNumberList(numArray);      
   }
 
   this.loadNumberList = function(numArray) {
