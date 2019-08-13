@@ -1,3 +1,6 @@
+var express = require('express')
+var http = require('http');
+var app = express();
 // http://ejohn.org/blog/ecmascript-5-strict-mode-json-and-more/
 "use strict";
 
@@ -32,33 +35,41 @@ var colors = [ 'red', 'green', 'blue', 'magenta', 'purple', 'plum', 'orange' ];
 // ... in random order
 colors.sort(function(a,b) { return Math.random() > 0.5; } );
 
+app.use('/public', express.static('public'));
+
+app.get('/index.html', function(req, res){
+  console.log((new Date()) + ' HTTP server. URL'
+         + req.url + ' requested.');
+  res.sendFile(__dirname + "/" +"index.html");
+})
 /**
  * HTTP server
- */
-var server = http.createServer(function(request, response) {
-    // Not important for us. We're writing WebSocket server, not HTTP server
-    console.log((new Date()) + ' HTTP server. URL'
-      + request.url + ' requested.');
-
-  if (request.url === '/status') {
-    response.writeHead(200, {'Content-Type': 'application/json'});
-    var responseObject = {
-      currentClients: clients.length,
-      totalHistory: history.length
-    };
-    response.end(JSON.stringify(responseObject));
-  } else {
-    response.writeHead(404, {'Content-Type': 'text/plain'});
-    response.end('Sorry, unknown url');
-  }
-});
-server.listen(webSocketsServerPort, function() {
+//  */
+// var server = http.createServer(function(request, response) {
+//     // Not important for us. We're writing WebSocket server, not HTTP server
+//     console.log((new Date()) + ' HTTP server. URL'
+//       + request.url + ' requested.');
+//
+//   if (request.url === '/status') {
+//     response.writeHead(200, {'Content-Type': 'application/json'});
+//     var responseObject = {
+//       currentClients: clients.length,
+//       totalHistory: history.length
+//     };
+//     response.end(JSON.stringify(responseObject));
+//   } else {
+//     response.writeHead(404, {'Content-Type': 'text/plain'});
+//     response.end('Sorry, unknown url');
+//   }
+// });
+var server = app.listen(webSocketsServerPort, function() {
     console.log((new Date()) + " Server is listening on port " + webSocketsServerPort);
 });
 
 /**
  * WebSocket server
  */
+//console.log(server);
 var wsServer = new webSocketServer({
     // WebSocket server is tied to a HTTP server. WebSocket request is just
     // an enhanced HTTP request. For more info http://tools.ietf.org/html/rfc6455#page-6
