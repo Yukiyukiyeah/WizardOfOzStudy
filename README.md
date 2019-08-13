@@ -5,6 +5,7 @@ A small prototype for WizardOfOzStudy following the guide:https://gist.github.co
 
 - node.js
 - Websocket
+- Express
 
 ## Instruction
 
@@ -20,10 +21,11 @@ Install node.js following this guide:
 
  http://www.runoob.com/nodejs/nodejs-install-setup.html
 
-Install WebSocket
+Install WebSocket & Express
 
 ```
 $ sudo npm install websocket
+$ sudo npm install express
 ```
 
 Enter the place you put the file and open the server
@@ -32,9 +34,11 @@ Enter the place you put the file and open the server
 $ node chat-server.js
 ```
 
-and the sever is running at port 1337.
+and the sever is running at port 1337. You could enter `localhost:1337/public/index.html` to visit the website.
 
 Open Visualgo.html in separate windows，enter 'Chat' and enter your name, then you can start playing the user or the wizard.
 
-You could see the usage log here: http://localhost:1337/status
+If you want to visit the server from another computer, make sure they are in the same local area network. Find your local ip by enter`ifconfig`in terminal.
+
+Then, enter the `[server ip]:1337` in your browser and visit the website. 
 
