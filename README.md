@@ -40,7 +40,7 @@ Open Visualgo.html in separate windows，enter 'Chat' and enter your name, then 
 
 If you want to visit the server from another computer, make sure they are in the same local area network. Find your local ip by enter`ifconfig`in terminal.
 
-**Then you have to go to public/chat-frontend.js and change the code`var connection = new WebSocket('ws://[server ip]:1337');`
+**Then you have to go to public/chat-frontend.js and change the code**`var connection = new WebSocket('ws://[server ip]:1337');`
 
 Then, enter the `[server ip]:1337` in your browser and visit the website. 
 
