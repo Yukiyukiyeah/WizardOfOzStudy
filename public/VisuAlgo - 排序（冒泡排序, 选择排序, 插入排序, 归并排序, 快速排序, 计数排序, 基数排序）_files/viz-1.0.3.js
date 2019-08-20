@@ -33,7 +33,7 @@ showStatusPanel();});$('#codetrace-hide').click(function(){if(isCodetraceOpen())
 hideCodetracePanel();else
 showCodetracePanel();});$('#actions-hide').click(function(){if(isActionsOpen())
 hideEntireActionsPanel();else
-showActionsPanel();});$('.electure-dialog .electure-print').click(openPrinterFriendly);$('.electure-dialog .electure-end').click(end_eLecture);$('.electure-dialog .electure-prev').click(function(){openSlide($(this).attr('data-nextid'));});$('.electure-dialog .electure-next').click(function(){openSlide($(this).attr('data-nextid'));});$(document).keydown(function(event){if(event.which==32){if(mode!="e-Lecture"){if(isPaused)
+showActionsPanel();});$('.electure-dialog .electure-print').click(openPrinterFriendly);$('.electure-dialog .electure-end').click(end_eLecture);$('.electure-dialog .electure-prev').click(function(){openSlide($(this).attr('data-nextid'));});$('.electure-dialog .electure-next').click(function(){openSlide($(this).attr('data-nextid'));});$(document).keydown(function(event){if(event.which==192){if(mode!="e-Lecture"){if(isPaused)
 play();else
 pause();}}
 else if(event.which==33){if(mode=="e-Lecture"&&!isPlaying)
